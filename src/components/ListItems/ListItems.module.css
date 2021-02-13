@@ -1,0 +1,13 @@
+.ListItems {
+  width: 60%;
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  scroll-behavior: smooth;
+}

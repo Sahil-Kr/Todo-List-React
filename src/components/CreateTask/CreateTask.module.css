@@ -1,0 +1,44 @@
+.CreateTask {
+  width: 40%;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 20px;
+}
+
+.Heading {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.CreateTask textarea {
+  width: 85%;
+  border: none;
+  font-family: inherit;
+  border-radius: 10px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.384);
+  resize: none;
+  padding: 15px;
+}
+
+.CreateTask textarea:focus {
+  outline: none;
+}
+
+.Btn {
+  padding: 5px 15px;
+  outline: none;
+  background-color: #333;
+  color: azure;
+  font-family: inherit;
+  border-radius: 30px;
+  margin-top: 20px;
+  backface-visibility: hidden;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.384);
+  transition: transform 0.2s ease-in;
+}
+
+.Btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.384);
+}
