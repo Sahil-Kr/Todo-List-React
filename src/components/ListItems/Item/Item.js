@@ -37,7 +37,9 @@ const Item = (props) => {
             EDIT
           </button>
         )}
-        <button onClick={deleteTaskHandler}>DELETE</button>
+        <button className="deleteTask" onClick={deleteTaskHandler}>
+          DELETE
+        </button>
       </div>
     </div>
   );
