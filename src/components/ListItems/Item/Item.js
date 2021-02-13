@@ -20,22 +20,22 @@ const Item = (props) => {
 
   return (
     <div className={classes.Item + " list"}>
-      {!editActive ? (
-        <p className={classes.Content}>{props.task.content}</p>
-      ) : (
+      {
         <textarea
-          className="editTask"
           value={content}
           onChange={(e) => setContent(e.target.value)}
+          disabled={!editActive}
         ></textarea>
-      )}
+      }
       <div className={classes.Btns}>
         {editActive ? (
           <button className="saveTask" onClick={saveClickHandler}>
             SAVE
           </button>
         ) : (
-          <button onClick={() => setEditActive(true)}>EDIT</button>
+          <button className="editTask" onClick={() => setEditActive(true)}>
+            EDIT
+          </button>
         )}
         <button onClick={deleteTaskHandler}>DELETE</button>
       </div>
