@@ -29,7 +29,11 @@ const Item = (props) => {
       }
       <div className={classes.Btns}>
         {editActive ? (
-          <button className="saveTask" onClick={saveClickHandler}>
+          <button
+            className="saveTask"
+            onClick={saveClickHandler}
+            disabled={!content}
+          >
             SAVE
           </button>
         ) : (
@@ -37,9 +41,11 @@ const Item = (props) => {
             EDIT
           </button>
         )}
-        <button className="deleteTask" onClick={deleteTaskHandler}>
-          DELETE
-        </button>
+        {!editActive ? (
+          <button className="deleteTask" onClick={deleteTaskHandler}>
+            DELETE
+          </button>
+        ) : null}
       </div>
     </div>
   );

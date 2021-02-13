@@ -15,13 +15,12 @@ const Layout = () => {
   };
 
   const updateTaskHandler = (oldTask, updatedTask) => {
-    const list = taskList.slice(0);
     let updateIndex;
-    list.forEach((task, index) => {
+    taskList.forEach((task, index) => {
       if (task === oldTask) updateIndex = index;
     });
-    list.splice(updateIndex, 1, updatedTask);
-    setTaskList(list);
+    taskList[updateIndex].content = updatedTask.content;
+    setTaskList(taskList);
     // console.log(oldTask);
   };
 
