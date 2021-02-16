@@ -20,9 +20,8 @@ const Layout = () => {
     list.forEach((task, index) => {
       if (task === oldTask) updateIndex = index;
     });
-    let newList = [...taskList];
-    newList[updateIndex].content = updatedTask.content;
-    setTaskList(newList);
+    list[updateIndex].content = updatedTask.content;
+    setTaskList(list);
     // console.log(oldTask);
   };
 

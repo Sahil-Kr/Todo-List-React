@@ -1,5 +1,6 @@
 .Layout {
-  height: 85%;
+  max-height: 78%;
+  min-height: 60%;
   width: 70%;
   background-color: #777;
   position: absolute;
